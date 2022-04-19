@@ -1,0 +1,261 @@
+.overview-table-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;    
+}
+
+.overview-table-cases{
+    width:100%;
+}
+
+.overview-table-cases tbody tr {
+    background: #efefef;
+    color: black;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.overview-table-cases td {
+    padding:5px;
+    text-align:center;
+    width:33%;
+    padding:10px;
+    font-size:14px;
+}
+
+.overview-table-name {
+    width: 100%;
+    background-color: #12759c;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 3px solid #48bbde;
+    border-right: 3px inset #48bbde;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-top-right-radius: 15px;
+    /*padding:8px 5px;*/
+}
+
+.overview-table-headers {
+    background: #193d61;
+    color:white;
+}
+
+
+/* classes used for js code hide and displat */
+.pg-hide-row{
+    display: none;
+}
+
+/* pagination nav block */
+.pg-nav-container{
+    /* parent container if any global style to container required */
+    margin-top: 10px;        
+}
+
+/* --------- Default ----------- */
+
+.default-pg-nav-content{
+    display: flex;    
+    align-items: center;
+    height: 30px;    
+    color: grey;     
+    font-size: 16px;   
+    width: fit-content;
+    background: white;        
+}
+
+/* next and prev buttons */
+.default-pg-nav-content [data-dir]{            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(245, 245, 245);    
+    height: 100%;
+    width: 60px;
+    border-top: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(194, 194, 194);        
+    cursor: pointer;
+    transition: 0.2 ease-in;
+}
+
+/* hover option on buttons */
+.default-pg-nav-content [data-dir]:hover{            
+    background: rgb(210, 210, 210);    
+}
+
+/* 'first' button */
+.default-pg-nav-content .nav-first-page {            
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* 'last' button */
+.default-pg-nav-content .nav-last-page {            
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* first and last buttons */
+.default-pg-nav-content .nav-single-op{        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(235, 235, 235);   
+    cursor: pointer;
+}
+
+
+/* spacers between button options */
+.default-pg-nav-content .btn-hz-spacer{    
+    
+}
+
+.default-pg-nav-content .pg-hz-spacer{    
+}
+
+/* number containers */
+.default-pg-nav-content .nav-pages-container{
+    display: flex;
+    height: 100%;
+}
+
+/* page buttons parent container */
+.default-pg-nav-content .pg-nav-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+    height: 100%;
+    border-top: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(194, 194, 194);    
+}
+
+/* page buttons */
+.default-pg-nav-content .pg-num-val{    
+    width: 15px;           
+    text-align: center;
+    transition: 0.2s ease-in;
+    cursor: pointer;        
+    width: 28px;
+    
+}
+
+/* page button hover */
+.default-pg-nav-content .pg-num-val:hover{
+    background: rgb(250, 231, 224);   
+    padding: 8px 0px;
+}
+
+/* page button active class*/
+.default-pg-nav-content .pg-num-active{
+    background: rgb(255, 86, 19) !important;    
+    padding: 10px 4px !important; 
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* --------- custom ----------- */
+
+.custom-pg-nav-content{
+    display: flex;    
+    align-items: center;
+    height: 30px;    
+    color:rgb(105, 127, 199);          
+    width: fit-content;
+    background: white;        
+    font-size: 16px;;
+}
+
+/* next and prev buttons */
+.custom-pg-nav-content [data-dir]{            
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100%;
+    width: 60px;          
+    cursor: pointer;
+    transition: 0.2 ease-in;        
+    border-top: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(194, 194, 194);    
+}
+
+/* hover option on buttons */
+.custom-pg-nav-content [data-dir]:hover{         
+    background: rgb(224, 229, 250);               
+}
+
+/* 'first' button */
+.custom-pg-nav-content .nav-first-page {  
+    width: 50px;                  
+    justify-content: left;    
+    padding-left: 10px;
+}
+
+/* 'last' button */
+.custom-pg-nav-content .nav-last-page {                
+    width: 50px;                  
+    justify-content: right;    
+    padding-right: 10px;
+}
+
+/* first and last buttons */
+.custom-pg-nav-content .nav-single-op{        
+    display: flex;    
+    align-items: center;             
+    cursor: pointer;
+}
+
+
+/* spacers between button options */
+.custom-pg-nav-content .btn-hz-spacer{    
+    /* width: 16px; */
+}
+
+.custom-pg-nav-content .pg-hz-spacer{    
+    
+}
+
+/* number containers */
+.custom-pg-nav-content .nav-pages-container{
+    display: flex;
+    height: 100%;
+}
+
+/* page buttons parent container */
+.custom-pg-nav-content .pg-nav-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+    height: 100%;    
+}
+
+/* page buttons */
+.custom-pg-nav-content .pg-num-val{        
+    font-size: 16px;
+    width: 15px;           
+    text-align: center;
+    transition: 0.3s ease-in;
+    cursor: pointer;            
+    width: 28px;    
+    line-height: 30px;
+    border-top: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(194, 194, 194);    
+    
+}
+
+/* page button hover */
+.custom-pg-nav-content .pg-num-val:hover{
+    background: rgb(224, 229, 250);       
+}
+
+/* page button active class*/
+.custom-pg-nav-content .pg-num-active{        
+    background: rgb(0, 51, 255) !important;   
+    color: white !important;
+    font-weight: bold;
+}

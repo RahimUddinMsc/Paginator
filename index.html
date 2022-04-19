@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="paginationTable.css">
+
+<body>
+
+<div class="">
+ <h1>Tablet test</h1> 
+</div>
+
+
+
+<table class="overview-table-cases" id="table-one">
+    <thead>
+        <tr class="overview-table-name">
+            <td colspan="3">
+                Cases                    
+            </td>
+        </tr>
+        <tr class="overview-table-headers">
+            <td>Surveyor</td>
+            <td>Address</td>
+            <td>Status</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>charles</td>
+            <td>1</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>2</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>3</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>4</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>5</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>6</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>7</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>8</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>9</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>10</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>11</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>12</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>13</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>14</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>15</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>16</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>17</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>18</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>19</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>20</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>21</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>22</td>
+            <td>fail</td>
+        </tr>
+        <tr>
+            <td>charles</td>
+            <td>23</td>
+            <td>fail</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+
+<table class="overview-table-cases" id="table-two">
+    <thead>        
+        <tr class="overview-table-headers">
+            <td>Surveyor</td>
+            <td>Address</td>
+            <td>Status</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="test-one">second</td>
+            <td>1</td>
+            <td class="test-two">fail</td>
+        </tr>
+        <tr>
+            <td class="test-one">second</td>
+            <td>2</td>
+            <td class="test-two">fail</td>
+        </tr>
+        <tr>
+            <td class="test-one">second</td>
+            <td>3</td>
+            <td class="test-two">fail</td>
+        </tr>
+        <tr>
+            <td class="test-one">second</td>
+            <td>4</td>
+            <td class="test-two">fail</td>
+        </tr>
+        <tr>
+            <td class="test-one">second</td>
+            <td>5</td>
+            <td class="test-two">fail</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+
+<script src="paginationTable.js"></script>
+<script>    
+    Paginator.init({tableID:"table-one", rows:3, headers:2, navRange:5,navStyle:'default'});    
+    Paginator.init({tableID:"table-two",rows:2,navStyle:'custom',});
+
+    
+
+    // document.querySelectorAll('.test-one').forEach(el => {
+    //     el.addEventListener('click', e => {
+    //         testOne(e)
+    //     })
+    // })
+
+    // let testOne = (e) => {    
+    //     e.target.innerText = "insert"
+    //     // console.log(text.target.parentElement)
+    // }
+
+    // let testTwo = (text) => {        
+    //     alert("test alert")
+    // }
+
+
+    // Paginator.init(
+    //     {
+    //         tableID:"table-two",
+    //         rows:2,
+    //         navStyle:'custom',
+    //         clickEvents: [
+    //             {
+    //                 selector:'.test-one',
+    //                 event: testOne.bind(this),
+    //                 useClickObj: true
+    //             },
+    //             {
+    //                 selector:'.test-two',
+    //                 event: testTwo.bind(this),
+    //             },
+    //         ]        
+    //     }
+    // );
+
+    // Paginator.init({tableID:"table-one",headers:2, rows:2, navRange:5, navStyle:'default'});
+    //headers : 1
+    //rows: 25
+    //nav range: 5
+    //navstyle: default 
+    //min record: 1 page
+    
+</script>
+
+
+
+
+
+</html>
